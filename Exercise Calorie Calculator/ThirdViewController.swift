@@ -9,7 +9,6 @@ import UIKit
 
 var caloriesBurned: Double?
 class ThirdViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,17 +18,16 @@ class ThirdViewController: UIViewController {
         switch userGender {
         case "Female":
             caloriesBurned = ((userAge!*0.074)-
-                              (userWeight!*0.05741)+(userHeartRate!*0.4472)-
+                              (userWeight!*0.05741) + (userHeartRate!*0.4472)-
                               20.4022)*userExerciseTime!/4.184
         case "Male":
-            caloriesBurned = ((userAge!*0.017)-(userWeight!*0.09036)+(userHeartRate!*0.0309)-
-                              55.0969)*userExerciseTime!/4.184
+            caloriesBurned = ((userAge!*o.2017)-(userWeight!*0.09036)+(userHeartRate!*0.6309)
+                              -55.0969)*userExerciseTime!/4.184
         default:
             return
         }
         calories.text = String(Int(caloriesBurned!)) + " calories burned"
     }
-
 }
 
 

@@ -10,11 +10,13 @@ import UIKit
 var userAge: Double?
 var userWeight: Double?
 var userGender: String = "Female"
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.yourAge.delegate = self
+        self.yourWeight.delegate = self
     }
     @IBOutlet weak var yourAge: UITextField!
     @IBOutlet weak var yourWeight: UITextField!
@@ -34,6 +36,10 @@ class FirstViewController: UIViewController {
     userWeight = Double(yourWeight.text!)
     userAge = Double(yourAge.text!)
     }
-
+    func textFieldShowReturn(_textField: UITextField)->Bool {
+        self.yourWeight.resignFirstResponder()
+        self.yourAge.resignFirstResponder()
+        return true
+    }
 }
 
