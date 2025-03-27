@@ -14,7 +14,7 @@ class ThirdViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var calories: UILabel!
-    @IBAction func calcCalories(_ sender: Any) {
+    @IBAction func calCalories(_ sender: Any){
         switch userGender {
         case "Female":
             caloriesBurned = ((userAge!*0.074)-
