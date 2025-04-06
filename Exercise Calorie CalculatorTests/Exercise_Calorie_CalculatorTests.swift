@@ -2,7 +2,7 @@
 //  Exercise_Calorie_CalculatorTests.swift
 //  Exercise Calorie CalculatorTests
 //
-//  Created by Jamisel Roman on 4/5/25.
+//  Created by Ennis Cruz on 4/5/25.
 //
 
 import XCTest
