@@ -36,7 +36,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mqh-BW-xeF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calculate calories" image="circle.fill" catalog="system" id="IiW-FC-cxQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -102,7 +102,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TSP-wN-owQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Enter exercise info" image="square.fill" catalog="system" id="4Ui-KA-0Q6"/>
                     <connections>
@@ -179,7 +179,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gd0-FC-t92"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="separatorColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Enter personal info" image="circle.fill" catalog="system" id="ybK-b4-gio"/>
                     <connections>
@@ -215,8 +215,11 @@
     <resources>
         <image name="circle.fill" catalog="system" width="128" height="123"/>
         <image name="square.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
